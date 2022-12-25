@@ -1,0 +1,169 @@
+.hero {
+  &__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 140px;
+  }
+
+  &__content {
+    width: 50%;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.553846px;
+    color: $sanblue;
+  }
+
+  &__form {
+    display: inline-block;
+    margin: 40px 0 16px;
+    position: relative;
+  }
+
+  &__input {
+    width: 38vw;
+    padding: 15px 0 15px 27px;
+    background-color: $waterwhite;
+    border-radius: 24px;
+    border: none;
+    -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    outline: none;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+
+    @include btn(15px, 25px, $darkpink, none, $charmpink, $waterwhite);
+  }
+
+  &__text {
+    margin-left: 27px;
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: $lightsanblue;
+  }
+
+  &__text a {
+    font-weight: 700;
+    color: $lightsanblue;
+  }
+
+  &__img {
+    margin-top: 55px;
+    border-radius: 35px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .hero {
+    &__input {
+      width: 50vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero {
+    &__title {
+      font-size: 48px;
+      line-height: 56px;
+    }
+
+    &__img {
+      width: 230px;
+    }
+
+    &__input {
+      width: 60vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero {
+    &__wrapper {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse;
+      gap: 48px;
+    }
+
+    &__content {
+      width: 90%;
+      text-align: center;
+    }
+
+    &__input {
+      width: 70vw;
+    }
+
+    &__img {
+      width: 159px;
+      border-radius: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .hero {
+    &__btn {
+      font-size: 10px !important;
+      @include btn(15px, 20px, $darkpink, none, $charmpink, $waterwhite);
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .hero {
+    &__wrapper {
+      gap: 24px;
+    }
+
+    &__content {
+      width: 100%;
+    }
+
+    &__input {
+      position: static;
+      width: 90vw;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    &__btn {
+      position: static;
+
+      width: 100%;
+      margin-top: 16px;
+
+      display: block;
+
+      font-size: 15px !important;
+    }
+
+    &__img {
+      width: 127px;
+      border-radius: 15px;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.header {
+  padding: 40px 0 0;
+
+  &__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  &__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 64px;
+  }
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: $sanblue;
+
+    opacity: 0.7;
+
+    -webkit-transition: all 0.3s linear;
+
+    -o-transition: all 0.3s linear;
+
+    transition: all 0.3s linear;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__btn {
+    @include btn(15px, 25px, $darkpink, none, $charmpink, $waterwhite);
+  }
+
+  &__menu {
+    display: none;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    &__list {
+      gap: 30px;
+    }
+
+    &__btn {
+      @include btn(10px, 20px, $darkpink, none, $charmpink, $waterwhite);
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .header {
+    &__nav {
+      gap: 20px;
+    }
+
+    &__logo {
+      width: 110px;
+    }
+
+    &__list {
+      gap: 20px;
+    }
+
+    &__link {
+      font-size: 12px;
+    }
+
+    &__btn {
+      font-size: 12px !important;
+      @include btn(10px, 16px, $darkpink, none, $charmpink, $waterwhite);
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .header {
+    &__nav {
+      gap: 15px;
+    }
+
+    &__logo {
+      width: 100px;
+    }
+
+    &__list {
+      gap: 10px;
+    }
+
+    &__link {
+      font-size: 12px;
+    }
+
+    &__btn {
+      font-size: 12px !important;
+      @include btn(8px, 14px, $darkpink, none, $charmpink, $waterwhite);
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .header {
+    &__list,
+    &__btn {
+      display: none;
+    }
+
+    &__logo {
+      width: 138px;
+    }
+
+    &__menu {
+      display: block;
+    }
+  }
+}

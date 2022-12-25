@@ -1,0 +1,1325 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+/* dm-serif-display-regular - latin */
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/dm-serif-display-v10-latin-regular.woff2") format("woff2"), url("../fonts/dm-serif-display-v10-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* public-sans-regular - latin */
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/public-sans-v14-latin-regular.woff2") format("woff2"), url("../fonts/public-sans-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* public-sans-700 - latin */
+@font-face {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/public-sans-v14-latin-700.woff2") format("woff2"), url("../fonts/public-sans-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Public Sans";
+  font-weight: 400;
+  background: url(../img/bg.png) no-repeat top right #edf3f8;
+  background-size: 680px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media only screen and (max-width: 1180px) {
+  body {
+    background-size: 500px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  body {
+    background-image: url(../img/tablet-bg.png);
+    background-size: auto;
+    background-position: center top;
+  }
+}
+.header {
+  padding: 40px 0 0;
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.header__list {
+  display: flex;
+  gap: 40px;
+}
+.header__link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #36536b;
+  opacity: 0.7;
+  transition: all 0.3s linear;
+}
+.header__link:hover {
+  opacity: 1;
+}
+.header__btn {
+  padding: 15px 25px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  background-color: #ba4270;
+  color: #fbfcfe;
+  border: none;
+  border-radius: 24px;
+  transition: all 0.3s linear;
+}
+.header__btn:hover {
+  color: #fbfcfe;
+  background-color: #da6d97;
+}
+.header__menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .header__list {
+    gap: 30px;
+  }
+  .header__btn {
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    background-color: #ba4270;
+    color: #fbfcfe;
+    border: none;
+    border-radius: 24px;
+    transition: all 0.3s linear;
+  }
+  .header__btn:hover {
+    color: #fbfcfe;
+    background-color: #da6d97;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .header__nav {
+    gap: 20px;
+  }
+  .header__logo {
+    width: 110px;
+  }
+  .header__list {
+    gap: 20px;
+  }
+  .header__link {
+    font-size: 12px;
+  }
+  .header__btn {
+    font-size: 12px !important;
+    padding: 10px 16px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    background-color: #ba4270;
+    color: #fbfcfe;
+    border: none;
+    border-radius: 24px;
+    transition: all 0.3s linear;
+  }
+  .header__btn:hover {
+    color: #fbfcfe;
+    background-color: #da6d97;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .header__nav {
+    gap: 15px;
+  }
+  .header__logo {
+    width: 100px;
+  }
+  .header__list {
+    gap: 10px;
+  }
+  .header__link {
+    font-size: 12px;
+  }
+  .header__btn {
+    font-size: 12px !important;
+    padding: 8px 14px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    background-color: #ba4270;
+    color: #fbfcfe;
+    border: none;
+    border-radius: 24px;
+    transition: all 0.3s linear;
+  }
+  .header__btn:hover {
+    color: #fbfcfe;
+    background-color: #da6d97;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .header__list, .header__btn {
+    display: none;
+  }
+  .header__logo {
+    width: 138px;
+  }
+  .header__menu {
+    display: block;
+  }
+}
+.hero__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
+.hero__content {
+  width: 50%;
+}
+.hero__title {
+  margin: 0;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.553846px;
+  color: #36536b;
+}
+.hero__form {
+  display: inline-block;
+  margin: 40px 0 16px;
+  position: relative;
+}
+.hero__input {
+  width: 38vw;
+  padding: 15px 0 15px 27px;
+  background-color: #fbfcfe;
+  border-radius: 24px;
+  border: none;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  outline: none;
+}
+.hero__btn {
+  position: absolute;
+  right: 0;
+  padding: 15px 25px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  background-color: #ba4270;
+  color: #fbfcfe;
+  border: none;
+  border-radius: 24px;
+  transition: all 0.3s linear;
+}
+.hero__btn:hover {
+  color: #fbfcfe;
+  background-color: #da6d97;
+}
+.hero__text {
+  margin-left: 27px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #6c8294;
+}
+.hero__text a {
+  font-weight: 700;
+  color: #6c8294;
+}
+.hero__img {
+  margin-top: 55px;
+  border-radius: 35px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero__input {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hero__title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .hero__img {
+    width: 230px;
+  }
+  .hero__input {
+    width: 60vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero__wrapper {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 48px;
+  }
+  .hero__content {
+    width: 90%;
+    text-align: center;
+  }
+  .hero__input {
+    width: 70vw;
+  }
+  .hero__img {
+    width: 159px;
+    border-radius: 20px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .hero__btn {
+    font-size: 10px !important;
+    padding: 15px 20px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.115385px;
+    background-color: #ba4270;
+    color: #fbfcfe;
+    border: none;
+    border-radius: 24px;
+    transition: all 0.3s linear;
+  }
+  .hero__btn:hover {
+    color: #fbfcfe;
+    background-color: #da6d97;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .hero__wrapper {
+    gap: 24px;
+  }
+  .hero__content {
+    width: 100%;
+  }
+  .hero__input {
+    position: static;
+    width: 90vw;
+  }
+  .hero__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .hero__btn {
+    position: static;
+    width: 100%;
+    margin-top: 16px;
+    display: block;
+    font-size: 15px !important;
+  }
+  .hero__img {
+    width: 127px;
+    border-radius: 15px;
+  }
+}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.work {
+  margin-top: 90px;
+  background: url(../img/work-bg.png) no-repeat top left #1b262f;
+}
+.work__wrapper {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.work__content {
+  max-width: 40%;
+}
+.work__title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #fbfcfe;
+}
+.work__text {
+  margin: 24px 0 32px;
+  font-size: 15px;
+  line-height: 28px;
+  color: #fbfcfe;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+.work__btn {
+  display: inline-block;
+  padding: 15px 32px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  background-color: transparent;
+  color: #fbfcfe;
+  border: 2px solid #fbfcfe;
+  border-radius: 24px;
+  transition: all 0.3s linear;
+}
+.work__btn:hover {
+  color: #1b262f;
+  background-color: #fbfcfe;
+}
+.work__images {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 39px 1fr 39px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 39px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .work__content {
+    max-width: 60%;
+  }
+  .work__images {
+    -ms-grid-columns: 1fr [2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .work {
+    background: url(../img/tablet-bg.png) no-repeat top center #1b262f;
+  }
+  .work__wrapper {
+    flex-direction: column-reverse;
+    gap: 54px;
+  }
+  .work__content {
+    max-width: 80%;
+    text-align: center;
+  }
+  .work__images {
+    -ms-grid-columns: 1fr [3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .work__images {
+    gap: 25px;
+  }
+  .work__img:first-child {
+    width: 107px;
+  }
+  .work__img:nth-child(2) {
+    width: 120px;
+  }
+  .work__img:nth-child(2) {
+    width: 115px;
+  }
+  .work__img:nth-child(4) {
+    width: 108px;
+  }
+  .work__img:nth-child(5) {
+    width: 79px;
+  }
+  .work__img:last-child {
+    width: 113px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .work__wrapper {
+    gap: 46px;
+  }
+  .work__content {
+    max-width: 80%;
+    text-align: center;
+  }
+  .work__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .work__images {
+    gap: 39px;
+    -ms-grid-columns: 1fr 39px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.implement__wrapper {
+  margin-top: 134px;
+  display: flex;
+  align-items: center;
+  gap: 125px;
+}
+.implement__box {
+  width: 100%;
+  background-color: #1b262f;
+  box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+  border-radius: 8px;
+}
+.implement__head {
+  padding: 12px 0 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #2e3f4d;
+  border-radius: 10px 10px 0 0;
+}
+.implement__span {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ba4270;
+}
+.implement__span:nth-child(2) {
+  background-color: #527695;
+}
+.implement__span:last-child {
+  background-color: #36536b;
+}
+.implement__body {
+  padding: 32px 32px 32px;
+}
+.implement__desc {
+  font-size: 13px;
+  line-height: 20px;
+  color: #fbfcfe;
+}
+.implement__title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+}
+.implement__text {
+  margin-top: 24px;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+}
+
+@media only screen and (max-width: 768px) {
+  .implement__wrapper {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .implement__box {
+    width: 80%;
+  }
+  .implement__desc {
+    font-size: 11px;
+    line-height: 18px;
+  }
+  .implement__content {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .implement__wrapper {
+    flex-direction: column;
+    gap: 48px;
+  }
+  .implement__box {
+    width: 85%;
+  }
+  .implement__desc {
+    font-size: 9px;
+    line-height: 16px;
+  }
+  .implement__content {
+    text-align: center;
+  }
+  .implement__title {
+    font-size: 36px;
+    left: 36px;
+  }
+}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.simple {
+  background: url(../img/simple-bg.png) no-repeat right center;
+  background-size: contain;
+  padding-top: 166px;
+  padding-bottom: 146px;
+}
+.simple__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1%;
+}
+.simple__content {
+  width: 45%;
+}
+.simple__title {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+}
+.simple__text {
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6c8294;
+}
+.simple__imgs {
+  padding-right: 15px;
+  display: flex;
+  gap: 40px;
+}
+.simple__img {
+  box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+  border-radius: 35px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .simple__img {
+    width: 200px;
+    border-radius: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .simple {
+    background: none;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .simple__wrapper {
+    flex-direction: column-reverse;
+    gap: 48px;
+  }
+  .simple__imgs {
+    padding-right: 15px;
+    display: flex;
+    gap: 24px;
+  }
+  .simple__img {
+    width: 168px;
+    border-radius: 20px;
+  }
+  .simple__content {
+    width: 85%;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .simple {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .simple__wrapper {
+    flex-direction: column-reverse;
+  }
+  .simple__img {
+    width: 150px;
+    border-radius: 15px;
+  }
+  .simple__content {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .simple__img {
+    width: 127px;
+    border-radius: 15px;
+  }
+}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.strategy__list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.strategy__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+.strategy__title {
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.138462px;
+  color: #36536b;
+}
+.strategy__text {
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.115385px;
+  color: #6c8294;
+}
+
+@media only screen and (max-width: 808px) {
+  .strategy__img {
+    width: 88px;
+  }
+  .strategy__text {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .strategy__list {
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .strategy__list {
+    flex-direction: column;
+  }
+}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.start__wrapper {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.start__title {
+  padding-top: 18px;
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536b;
+}
+.start__form {
+  display: inline-block;
+  margin: 40px 0 16px;
+  position: relative;
+}
+.start__input {
+  width: 420px;
+  padding: 15px 0 15px 27px;
+  background-color: #fbfcfe;
+  border-radius: 24px;
+  border: none;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  outline: none;
+}
+.start__btn {
+  position: absolute;
+  right: 0;
+  padding: 15px 25px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  background-color: #ba4270;
+  color: #fbfcfe;
+  border: none;
+  border-radius: 24px;
+  transition: all 0.3s linear;
+}
+.start__btn:hover {
+  color: #fbfcfe;
+  background-color: #da6d97;
+}
+
+@media only screen and (max-width: 768px) {
+  .start__wrapper {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .start__wrapper {
+    flex-direction: column;
+  }
+  .start__input {
+    width: 90vw;
+  }
+  .start__title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .start__btn {
+    position: static;
+    width: 90vw;
+    margin-top: 16px;
+    display: block;
+    font-size: 15px !important;
+  }
+}
+.footer {
+  margin-top: 96px;
+  padding: 31px 0;
+  background: url(../img/footer-bg.png) no-repeat #1b262f;
+  background-position-y: -70px;
+  background-position-x: 500px;
+  background-size: cover;
+}
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__nav {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+.footer__list {
+  display: flex;
+  gap: 40px;
+}
+.footer__link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #fbfcfe;
+  opacity: 0.7;
+  transition: all 0.3s linear;
+}
+.footer__link:hover {
+  opacity: 1;
+}
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footer__socials a svg path {
+  transition: all 0.3s linear;
+}
+.footer__socials a svg path:hover {
+  fill: #da6d97;
+}
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    background-position-x: 300px;
+  }
+  .footer__list {
+    gap: 30px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .footer__nav {
+    gap: 20px;
+  }
+  .footer__logo {
+    width: 110px;
+  }
+  .footer__list {
+    gap: 20px;
+  }
+  .footer__link {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .footer__nav {
+    gap: 15px;
+  }
+  .footer__logo {
+    width: 100px;
+  }
+  .footer__list {
+    gap: 10px;
+  }
+  .footer__link {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .footer {
+    background: url(../img/footer-bg.png) no-repeat #1b262f;
+    background-position-y: 160px;
+    background-position-x: center;
+  }
+  .footer__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer__nav {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .footer__logo {
+    width: 135px;
+  }
+  .footer__list {
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+  }
+  .footer__link {
+    font-size: 15px;
+    line-height: 18px;
+    color: #fbfcfe;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+  }
+}
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+.header__check,
+.header__none,
+.menu {
+  display: none;
+}
+
+.header__check:checked ~ .menu {
+  display: block;
+}
+
+.header__none:checked ~ .menu {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  width: 80%;
+  height: 100vh;
+  padding: 86px 24px;
+  background-color: #1b262f;
+}
+.menu__wrapper {
+  position: relative;
+  padding: 48px 0;
+  text-align: center;
+  border-top: 1px solid rgba(251, 252, 254, 0.0823529412);
+}
+.menu__close {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  cursor: pointer;
+}
+.menu__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 36px;
+}
+.menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.menu__link {
+  font-size: 18px;
+  line-height: 28px;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+.menu__link:hover {
+  color: #da6d97;
+}
+.menu__btn {
+  padding: 15px 36px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.115385px;
+  background-color: #ba4270;
+  color: #fbfcfe;
+  border: none;
+  border-radius: 24px;
+  transition: all 0.3s linear;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+.menu__btn:hover {
+  color: #fbfcfe;
+  background-color: #da6d97;
+}/*# sourceMappingURL=style.min.css.map */

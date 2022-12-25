@@ -1,0 +1,97 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.header__check,
+.header__none,
+.menu {
+  display: none;
+}
+
+.header__check:checked ~ .menu {
+  display: block;
+}
+
+.header__none:checked ~ .menu {
+  display: none;
+}
+
+.menu {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+
+  width: 80%;
+  height: 100vh;
+  padding: 86px 24px;
+
+  background-color: $mirageblue;
+
+  &__wrapper {
+    position: relative;
+
+    padding: 48px 0;
+
+    text-align: center;
+
+    border-top: 1px solid #fbfcfe15;
+  }
+
+  &__close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    cursor: pointer;
+  }
+
+  &__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    gap: 36px;
+  }
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+
+    -webkit-transition: all 0.3s linear;
+
+    -o-transition: all 0.3s linear;
+
+    transition: all 0.3s linear;
+
+    &:hover {
+      color: $charmpink;
+    }
+  }
+
+  &__btn {
+    @include btn(15px, 36px, $darkpink, none, $charmpink, $waterwhite);
+    display: block;
+
+    text-align: center;
+    cursor: pointer;
+  }
+}

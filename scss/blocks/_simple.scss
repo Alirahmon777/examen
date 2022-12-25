@@ -1,0 +1,138 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.simple {
+  background: url(../img/simple-bg.png) no-repeat right center;
+  background-size: contain;
+  padding-top: 166px;
+  padding-bottom: 146px;
+
+  &__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1%;
+  }
+
+  &__content {
+    width: 45%;
+  }
+
+  &__title {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: $sanblue;
+  }
+
+  &__text {
+    font-family: "Public Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    color: $lightsanblue;
+  }
+
+  &__imgs {
+    padding-right: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+  }
+
+  &__img {
+    -webkit-box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+            box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+    border-radius: 35px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .simple {
+    &__img {
+      width: 200px;
+      border-radius: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .simple {
+    background: none;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+      gap: 48px;
+    }
+
+    &__imgs {
+      padding-right: 15px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 24px;
+    }
+
+    &__img {
+      width: 168px;
+      border-radius: 20px;
+    }
+
+    &__content {
+      width: 85%;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .simple {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse;
+    }
+
+    &__img {
+      width: 150px;
+      border-radius: 15px;
+    }
+
+    &__content {
+      width: 90%;
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .simple {
+    &__img {
+      width: 127px;
+      border-radius: 15px;
+    }
+  }
+}

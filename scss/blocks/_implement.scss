@@ -1,0 +1,136 @@
+.implement {
+  &__wrapper {
+    margin-top: 134px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 125px;
+  }
+
+  &__box {
+    width: 100%;
+
+    background-color: $mirageblue;
+    -webkit-box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+    box-shadow: 25px 25px 80px rgba(54, 83, 107, 0.300727);
+    border-radius: 8px;
+  }
+
+  &__head {
+    padding: 12px 0 12px 16px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 6px;
+
+    background-color: #2e3f4d;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__span {
+    width: 16px;
+    height: 16px;
+
+    border-radius: 50%;
+    background-color: $darkpink;
+  }
+
+  &__span:nth-child(2) {
+    background-color: #527695;
+  }
+
+  &__span:last-child {
+    background-color: $sanblue;
+  }
+
+  &__body {
+    padding: 32px 32px 32px;
+  }
+
+  &__desc {
+    font-size: 13px;
+    line-height: 20px;
+    color: $waterwhite;
+  }
+
+  &__title {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: $sanblue;
+  }
+
+  &__text {
+    margin-top: 24px;
+    font-size: 15px;
+    line-height: 28px;
+    color: $lightsanblue;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .implement {
+    &__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    &__box {
+      width: 80%;
+    }
+
+    &__desc {
+      font-size: 11px;
+      line-height: 18px;
+    }
+
+    &__content {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .implement {
+    &__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    &__box {
+      width: 85%;
+    }
+
+    &__desc {
+      font-size: 9px;
+      line-height: 16px;
+    }
+
+    &__content {
+      text-align: center;
+    }
+
+    &__title {
+      font-size: 36px;
+      left: 36px;
+    }
+  }
+}

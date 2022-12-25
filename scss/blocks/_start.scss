@@ -1,0 +1,98 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.start {
+  &__wrapper {
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  &__title {
+    padding-top: 18px;
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.369231px;
+    color: $sanblue;
+  }
+
+  &__form {
+    display: inline-block;
+    margin: 40px 0 16px;
+    position: relative;
+  }
+
+  &__input {
+    width: 420px;
+    padding: 15px 0 15px 27px;
+    background-color: $waterwhite;
+    border-radius: 24px;
+    border: none;
+    -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+            box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    outline: none;
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+
+    @include btn(15px, 25px, $darkpink, none, $charmpink, $waterwhite);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .start {
+    &__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .start {
+    &__wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+
+    &__input {
+      width: 90vw;
+    }
+
+    &__title{
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    &__btn {
+      position: static;
+
+      width: 90vw;
+      margin-top: 16px;
+
+      display: block;
+
+      font-size: 15px !important;
+    }
+  }
+}
